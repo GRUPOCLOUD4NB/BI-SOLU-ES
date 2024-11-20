@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BI SOLUÇÕES</title>
+    <link rel="stylesheet" href="PortalAutenticador.css">
+</head>
+<body>
+    <div class="background-effect">
+        <div class="login-container">
+            <div class="decorative-panel">
+                <h1>BI SOLUÇÕES</h1>
+                <p>Seja bem-vindo ao nosso portal! Acesse sua conta e aproveite nossos serviços exclusivos.</p>
+            </div>
+            <div class="login-panel">
+                <h2>Login</h2>
+                <p>Acesse sua conta</p>
+                <form action="PortalCliente.html" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="options">
+                        <label><input type="checkbox" name="remember"> Lembrar-me</label>
+                        <a href="#" class="forgot-password">Esqueci minha senha</a>
+                    </div>
+                    <button type="submit" class="login-button">Entrar</button>
+                </form>
+                <div class="support">
+                    <p>Precisa de ajuda? <a href="#">Contactar Suporte</a></p>
+                </div>
+            </div>
+        </div>
+        <footer class="login-footer">
+            <p>&copy; 2024 BI SOLUÇÕES. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

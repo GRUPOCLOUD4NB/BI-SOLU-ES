@@ -1,0 +1,186 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #139393, #60c7c7);
+    color: #333;
+    overflow: hidden;
+}
+
+/* Fundo com efeito visual */
+.background-effect {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-effect::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.background-effect::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+/* Container principal */
+.login-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+/* Painel decorativo */
+.decorative-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #139393, #0f6e6e);
+    color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.decorative-panel h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.decorative-panel p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Painel de login */
+.login-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-panel h2 {
+    font-size: 28px;
+    color: #139393;
+    margin-bottom: 10px;
+}
+
+.login-panel p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}
+
+.options a {
+    color: #139393;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    background: #139393;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background: #0f6e6e;
+}
+
+.support {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.support a {
+    color: #139393;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.support a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.login-footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1;
+}
